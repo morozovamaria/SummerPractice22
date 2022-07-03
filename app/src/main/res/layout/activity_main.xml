@@ -20,7 +20,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/textName"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
@@ -38,62 +38,47 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/intHeight"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:ems="10"
         android:hint="Height:"
         android:inputType="number"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/decimalWeight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <EditText
-        android:id="@+id/editTextNumber5"
+        android:id="@+id/intAge"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:ems="10"
         android:hint="Age:"
         android:inputType="number"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/decimalWeight"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/decimalWeight"
         android:layout_width="220dp"
         android:layout_height="65dp"
         android:ems="10"
         android:hint="Weight:"
         android:inputType="numberDecimal"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber5"
+        app:layout_constraintBottom_toTopOf="@+id/intAge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="220dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="32dp"
-        android:background="@color/white"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+        app:layout_constraintTop_toBottomOf="@+id/intHeight" />
 
     <TextView
         android:id="@+id/textView2"
@@ -102,8 +87,9 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="55dp"
-        android:text="Индекс массы тела"
-        android:textSize="32sp"
+        android:text="Happy Number"
+        android:textAlignment="center"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
